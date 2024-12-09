@@ -3,7 +3,7 @@ const{test,expect } = require('@playwright/test')
 test('ScreenShort' ,async ({page}) => {
 
     await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-    await page.waitForTimeout(6000);
+   
     await page.screenshot({path : 'test-results/ScreenShort'+ Date.now() + 'HomePage.png'})
 
 });
