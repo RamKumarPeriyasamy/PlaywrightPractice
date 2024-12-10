@@ -2,17 +2,17 @@ const{test , expect } = require ("@playwright/test")
 
 //only
 //test.only('test 1' , async ({page})
-test ('test 1' , async ({page}) => {
+  test ('test 1' , async ({page}) => {
   console.log('this my test 1');    
-})
+  })
 
-test ('test 2' , async ({page}) => {
+  test ('test 2' , async ({page}) => {
     console.log('this my test 2');    
   })
 
 //skip
 //test.skip ('test 3' , async ({page})
-test.skip ('test 3' , async ({page}) => {
+  test.skip ('test 3' , async ({page}) => {
     console.log('this my test 3');    
   });
 
@@ -22,9 +22,9 @@ test.skip ('test 3' , async ({page}) => {
     if (browserName === 'chromium') {
         test.skip('Skipping this test for Chromium browser');
     }
-});
+ });
 
-test.skip ('test 5' , async ({page}) => {
+  test.skip ('test 5' , async ({page}) => {
     test.fixme();
     console.log('this my test 5');    
   });
@@ -41,14 +41,13 @@ test.skip ('test 5' , async ({page}) => {
     if (browserName === 'firefox') {
        test.fail()
     }
-});
+  });
 
-test('ScreenShort' ,async ({page}) => {
+  test('ScreenShort' ,async ({page}) => {
      
     test.slow() // this key use for slow the test in 3time then comparely normally
     await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
     await page.screenshot({path : 'test-results/ScreenShort'+ Date.now() + 'HomePage.png'})
 
-});
-
+ });
  
