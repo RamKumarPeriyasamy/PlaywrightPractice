@@ -1,0 +1,2 @@
+Page title is: STORE
+page URl is : https://demoblaze.com/index.html

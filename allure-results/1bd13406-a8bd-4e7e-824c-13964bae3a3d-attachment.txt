@@ -1,7 +1,0 @@
-{
-  name: 'ramkumarperiyasamy',
-  job: 'Intern',
-  id: '558',
-  createdAt: '2024-12-10T07:48:32.775Z'
-}
-User ID: 558
